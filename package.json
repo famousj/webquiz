@@ -1,0 +1,34 @@
+{
+  "name": "webquiz",
+  "version": "0.0.0",
+  "description": "A silly web-based personality quiz",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/famousj/webquiz.git"
+  },
+  "keywords": [
+    "quiz",
+    "node.js",
+    "express",
+    "houndstooth",
+    "yankees"
+  ],
+  "author": "Justin LeBlanc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/famousj/webquiz/issues"
+  },
+  "homepage": "https://github.com/famousj/webquiz",
+  "dependencies": {
+    "logfmt": "~0.20.0",
+    "express": "~3.4.8",
+    "jade": "~1.1.5"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

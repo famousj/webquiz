@@ -1,0 +1,27 @@
+extends layout
+
+block content
+
+  .jumbotron
+    .quiz-container
+      .container
+
+        .row
+          h2(class="text-center")= title
+        - for (var i = 0; i < answers.length; i += 2) {
+          .row 
+            .col-md-6
+              a(href=nextpage)
+                img(src=answers[i].img, class="image-question", title=answers[i].title)
+              p(class="text-center")= answers[i].title
+            .col-md-6
+              a(href=nextpage)
+                img(src=answers[i+1].img, class="image-question", title=answers[i+1].title)
+              p(class="text-center")= answers[i+1].title
+        - }
+
+
+  // Bootstrap core JavaScript
+  // Placed at the end of the document so the pages load faster 
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+  script(src="js/bootstrap.min.js")

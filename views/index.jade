@@ -1,0 +1,21 @@
+extends layout
+
+block content
+
+  .jumbotron
+    .quiz-container(style="background-image: url(imgs/sew-crates.jpg)")
+      .quiz-intro
+        p.
+          Answer the following questions and we will reveal the person, place
+          or thing that you are, as well as what quiz you had been taking!
+        p.
+          Prepare to be astounded at the insights into yourself that you didn't
+          know but somehow a webpage was able to sort out for you!
+        //button(type="button", class="btn btn-lg btn-primary") Let's Do This!
+        a(href="q1.html", class="btn btn-lg btn-primary") Let's Do This!
+
+
+  // Bootstrap core JavaScript
+  // Placed at the end of the document so the pages load faster 
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+  script(src="js/bootstrap.min.js")
