@@ -53,6 +53,9 @@ app.get("/results.html", function(req, res) {
 	res.render('results.jade', results.results[0]);
 });
 
+app.use(function(req, res, next){
+    do404(res);
+});
 
 
 var port = Number(process.env.PORT || 2727);
