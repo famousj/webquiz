@@ -34,7 +34,7 @@ app.get(/^\/q(\d+).html$/, function(req, res) {
 		var question = questions.mc[qnum-questions.mcStart];
 		question.nextpage = nextpage;
 
-		res.render("mc.jade", question);
+		res.render("multipleChoice.jade", question);
 	}
 	else if (qnum == questions.mcStart + questions.mc.length) {
 		var question = questions.pictureQuestions[1];
