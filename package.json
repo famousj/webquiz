@@ -18,17 +18,17 @@
     "yankees"
   ],
   "author": "Justin LeBlanc",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/famousj/webquiz/issues"
   },
   "homepage": "https://github.com/famousj/webquiz",
   "dependencies": {
-    "logfmt": "~0.20.0",
-    "express": "~3.4.8",
+    "logfmt": "^0.20.0",
+    "express": "^3.4.8",
     "jade": "~1.1.5"
   },
   "engines": {
     "node": "0.10.x"
-  }
+  },
+  "devDependencies": {}
 }
