@@ -16,7 +16,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/(index.html)?', function(req, res) {
-	res.render('index.jade', {title: "What the What?  The Ultimate Web Quiz"});
+	res.render('index.jade', {title: "The Mystery Web Quiz"});
 });
 
 app.get(/^\/q(\d+).html$/, function(req, res) {
@@ -48,9 +48,25 @@ app.get(/^\/q(\d+).html$/, function(req, res) {
 
 });
 
-app.get("/results.html", function(req, res) {
+for (var result in results.results) {
+    var url = "/" + result + ".html";
 
-	res.render('results.jade', results.results[0]);
+    var path = /\/(.+).html$/;
+    app.get(url, function(req, res) {
+        var matches = req.path.match(path);
+        var name = matches[1];
+        results.results[name].img = "imgs/" + name + ".jpg";
+
+        res.render("results.jade", results.results[name]);
+    });
+};
+
+app.get("/results.html", function(req, res) {
+    var keys = Object.keys(results.results);
+    index = Math.floor(Math.random() * keys.length);
+
+    var url = "/" + keys[index] + ".html";
+    res.redirect(url);
 });
 
 app.use(function(req, res, next){

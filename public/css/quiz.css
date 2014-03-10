@@ -7,15 +7,21 @@
 	overflow:hidden;
 }
 
+.quiz-title {
+	margin-left: 150px;
+    color: LightGray;
+    display: block;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 .quiz-intro {
 	margin-left: 150px;
-	margin-top: 150px;
-	width: 330px;
+	width: 400px;
 }
 
 .quiz-intro h3, p {
  	background: rgb(255, 255, 255); 
- 	background: rgba(255, 2555, 255, .5); 
+ 	background: rgba(255, 255, 255, .5); 
 	display: block;
 	padding: 0 20px;
 }
