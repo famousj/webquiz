@@ -57,6 +57,12 @@ for (var result in results.results) {
         var name = matches[1];
         results.results[name].img = "imgs/" + name + ".jpg";
 
+        var fullurl = "http://" + req.headers.host + url;
+
+        results.results[name].fburl = 
+            "https://www.facebook.com/sharer/sharer.php?u=" + 
+            encodeURIComponent(fullurl);
+
         res.render("results.jade", results.results[name]);
     });
 };
