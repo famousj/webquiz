@@ -67,12 +67,12 @@ for (var result in results.results) {
 
         var host = "http://" + req.headers.host;
         results.results[name].img = host + "/imgs/" + name + ".jpg";
-        results.results[name].url = host + url;
+        results.results[name].url = host + req.path;
 
         results.results[name].fburl = 
             "https://www.facebook.com/sharer/sharer.php?u=" + 
-            encodeURIComponent(results.results[name].url);
-
+            encodeURIComponent(host + req.path);
+        
         res.render("results.jade", results.results[name]);
     });
 };
