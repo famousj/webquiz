@@ -71,7 +71,7 @@ for (var result in results.results) {
 
         results.results[name].fburl = 
             "https://www.facebook.com/sharer/sharer.php?u=" + 
-            encodeURIComponent(url);
+            encodeURIComponent(results.results[name].url);
 
         res.render("results.jade", results.results[name]);
     });
