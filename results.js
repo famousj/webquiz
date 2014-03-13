@@ -14,6 +14,7 @@ exports.results = {
     {
         title:  "You got William Henry Harrison",
 		topic:  "What U.S. President Are You?",
+        fbimg:  "http://upload.wikimedia.org/wikipedia/commons/d/d3/William_Henry_Harrison_by_James_Reid_Lambdin%2C_1835.jpg",
     },
 };
 
