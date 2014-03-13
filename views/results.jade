@@ -5,7 +5,7 @@ block header
   meta(property="og:title" content=fbtitle)
   meta(property="og:site_name" content="Dang Cold")
   meta(property="og:url" content=url)
-  meta(property="og:description" content="Take this quiz!  It's more fun than doing your job!")
+  meta(property="og:description" content=fbdescription)
   meta(property="og:image" content=fbimg)
 
   //FontAwesome
@@ -36,7 +36,7 @@ block content
         .col-md-3.text-center
         .col-md-2.text-center
           h2
-            a(class="btn btn-block btn-social btn-sm btn-facebook", href=fburl).
+            a(class="btn btn-block btn-social btn-sm btn-facebook", href=fburl, target="_blank").
               <i class="fa fa-facebook"></i> Share on Facebook
         .col-md-2.text-center
           h2
