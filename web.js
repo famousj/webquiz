@@ -8,6 +8,11 @@ var results     = require('./results.js');
 
 app.use(logfmt.requestLogger());
 
+app.configure('development', function(){
+  app.use(express.errorHandler());
+  app.locals.pretty = true;
+});
+
 var do404 = function(res) {
 	res.send(404, '<h2>404!</h2>Well, this is awkward...');
 }
@@ -17,6 +22,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/(index.html)?', function(req, res) {
 	res.render('index.jade', {title: "The Mystery Web Quiz"});
+});
+
+app.get('/about.html', function(req, res) {
+    res.render('about.jade', {title: "About"});
 });
 
 app.get(/^\/q(\d+).html$/, function(req, res) {
@@ -56,6 +65,12 @@ for (var result in results.results) {
         var matches = req.path.match(path);
         var name = matches[1];
         results.results[name].img = "imgs/" + name + ".jpg";
+
+        var fullurl = "http://" + req.headers.host + url;
+
+        results.results[name].fburl = 
+            "https://www.facebook.com/sharer/sharer.php?u=" + 
+            encodeURIComponent(fullurl);
 
         res.render("results.jade", results.results[name]);
     });

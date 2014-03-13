@@ -1,0 +1,57 @@
+extends layout
+
+
+block content
+
+  .jumbotron
+    .container
+      h2 Contact
+      p.
+        If you would like to complain about your quiz results to the author, or
+        if you want to send him money, or whatever,  <a 
+            href="mailto:dangcold@gmail.com">email him</a>.
+      p.
+        Source can be found 
+          <a href="https://github.com/famousj/webquiz">on GitHub</a>.
+
+      h2 FAQ
+      p
+        <b>Q</b> I think these results are faked.  I think you completely 
+        ignore my answers and just display results completely at random.
+      p <b> A </b> Gosh, you think?
+      p <b>Q</b> Wait, was that sarcasm?
+      p <b>A</b> You catch on quick!
+      p <b>Q</b> What's this written in?
+      p.
+        <b> A </b> The backend is written with node.js, using express.js and 
+        jade templates, and hosted by Heroku.  The "Post My Results to 
+        Facebook" button makes use of Facebook Open Graph.<br><br> All editing 
+        was done in vi.  Yeah, that's right.  I said vi.
+      p.
+        <b>Q</b> I would like to pay you a lot of money to do something 
+        awesome.  How do I get in touch?
+      p <b> A </b> <a href="mailto:dangcold@gmail.com">Send me an email</a>.
+      p. 
+        <b>Q</b>
+        Somehow I don't think people offering to pay you lots of money
+        constitutes a "frequently asked question".
+      p <b> A </b> Guilty as charged.
+      p.
+        <b>Q</b>
+        Apparently I can post my results to Urbit.  What the hell is Urbit?
+      p.
+        <b> A </b> <a href="http://www.urbit.org">Urbit </a>
+        is a prototype personal cloud computer.  Like imagine Dropbox
+        only instead of just holding onto your data, it can run programs and 
+        do amazing things.  Or it will do amazing things once it's more than 
+        just a prototype.  <br><br>
+        <a href="http://www.urbit.org">Go here</a>, pore over the somewhat
+        inscrutible documentation, then ask for a destroyer.  
+
+      a(href="index.html", class="btn btn-lg btn-primary") Back to the quiz
+
+
+  // Bootstrap core JavaScript
+  // Placed at the end of the document so the pages load faster 
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+  script(src="js/bootstrap.min.js")
