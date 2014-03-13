@@ -11,7 +11,7 @@ exports.results = {
     {
         title:  "You got Hüsker Dü!",
 		topic:  "What 80's Alt Rock Band Should You Listen to?",
-        fbtitle: "I got Hüsker Dü!",
+        fbtitle: "I should listen to Hüsker Dü",
         fbdescription:  "Take this quiz and find out what 80's Alt Rock band you should listen to!",
     },
     "whh":
