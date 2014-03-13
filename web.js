@@ -8,6 +8,11 @@ var results     = require('./results.js');
 
 app.use(logfmt.requestLogger());
 
+app.configure('development', function(){
+  app.use(express.errorHandler());
+  app.locals.pretty = true;
+});
+
 var do404 = function(res) {
 	res.send(404, '<h2>404!</h2>Well, this is awkward...');
 }
