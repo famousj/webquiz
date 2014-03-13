@@ -64,14 +64,14 @@ for (var result in results.results) {
     app.get(url, function(req, res) {
         var matches = req.path.match(path);
         var name = matches[1];
-        results.results[name].img = "imgs/" + name + ".jpg";
 
-        var fullurl = "http://" + req.headers.host + url;
-        results.results[name].url = fullurl;
+        var host = "http://" + req.headers.host;
+        results.results[name].img = host + "/imgs/" + name + ".jpg";
+        results.results[name].url = host + url;
 
         results.results[name].fburl = 
             "https://www.facebook.com/sharer/sharer.php?u=" + 
-            encodeURIComponent(fullurl);
+            encodeURIComponent(url);
 
         res.render("results.jade", results.results[name]);
     });
