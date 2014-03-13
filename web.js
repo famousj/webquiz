@@ -19,6 +19,10 @@ app.get('/(index.html)?', function(req, res) {
 	res.render('index.jade', {title: "The Mystery Web Quiz"});
 });
 
+app.get('/about.html', function(req, res) {
+    res.render('about.jade', {title: "About"});
+});
+
 app.get(/^\/q(\d+).html$/, function(req, res) {
 	var qnum = parseInt(req.params[0]);
 
