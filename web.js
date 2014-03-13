@@ -67,6 +67,7 @@ for (var result in results.results) {
         results.results[name].img = "imgs/" + name + ".jpg";
 
         var fullurl = "http://" + req.headers.host + url;
+        results.results[name].url = fullurl;
 
         results.results[name].fburl = 
             "https://www.facebook.com/sharer/sharer.php?u=" + 
