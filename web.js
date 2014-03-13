@@ -68,8 +68,9 @@ for (var result in results.results) {
         var host = "http://" + req.headers.host;
         results.results[name].img = host + "/imgs/" + name + ".jpg";
         results.results[name].url = host + req.path;
-        //results.results[name].fbimg = results.results[name].fbimg || results.results[name].img;
 
+        results.results[name].fbtitle = "I took the Mystery Quiz and I got " + 
+                                        results.results[name].fbtitle + "!";
         results.results[name].fbimg = host + "/imgs/" + name + "_fb.jpg";
 
         results.results[name].fburl = 

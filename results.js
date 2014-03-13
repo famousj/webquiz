@@ -3,18 +3,20 @@ exports.results = {
 	{
         title:  "You got the '27 Yankees!",
 		topic:  "What historic sports team are you?",
+        fbtitle: "the '27 Yankees",
 
 	},
     "husker_du":
     {
         title:  "You got Hüsker Dü!",
 		topic:  "What 80's Alt Rock Band Should You Listen to?",
+        fbtitle: "Hüsker Dü",
     },
     "whh":
     {
         title:  "You got William Henry Harrison",
 		topic:  "What U.S. President Are You?",
-        fbimg:  "http://upload.wikimedia.org/wikipedia/commons/d/d3/William_Henry_Harrison_by_James_Reid_Lambdin%2C_1835.jpg",
+        fbtitle:    "William Henry Harrison",
     },
 };
 
