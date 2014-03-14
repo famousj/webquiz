@@ -52,7 +52,7 @@ block content
 
         .col-md-2.text-center
           h2
-          - var twurl = "https://twitter.com/intent/tweet?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(twtext)
+          - var twurl = "https://twitter.com/intent/tweet?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(twtext) + "&hashtags=mysteryquiz"
           
           a(class="btn btn-block btn-social btn-sm btn-twitter", 
               href!=twurl)
