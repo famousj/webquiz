@@ -73,6 +73,10 @@ for (var result in results.results) {
         results.results[name].fburl = 
             "https://www.facebook.com/sharer/sharer.php?u=" + 
             encodeURIComponent(host + req.path);
+        results.results[name].twurl = "https://twitter.com/intent/tweet?url=" + 
+                                      encodeURIComponent(url) + 
+                                      "&text=Hammertime";
+
         
         res.render("results.jade", results.results[name]);
     });
