@@ -1,12 +1,16 @@
 extends layout
 
 block header
-  meta(property="fb:app_id" content="682969031761091")
-  meta(property="og:title" content=fbtitle)
-  meta(property="og:site_name" content="Dang Cold")
-  meta(property="og:url" content=url)
-  meta(property="og:description" content=fbdescription)
-  meta(property="og:image" content=fbimg)
+  meta(property="fb:app_id", content="682969031761091")
+  meta(property="og:title", content=fbtitle)
+  meta(property="og:site_name", content="Dang Cold")
+  meta(property="og:url", content=url)
+  meta(property="og:description", content=fbdescription)
+  meta(property="og:image", content=fbimg)
+  meta(property="twitter:card", content="summary")
+  meta(property="twitter:title", content=fbtitle)
+  meta(property="twitter:description", content=fbdescription)
+  meta(property="twitter:image", content=fbimg)
 
   //FontAwesome
   link(href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", rel="stylesheet")
@@ -41,26 +45,11 @@ block content
 
         .col-md-2.text-center
           h2
-
-          a(class="btn btn-block btn-social btn-sm btn-twitter", 
-                href="https://twitter.com/share",
-                data-text="I got William Henry Harrison. Find out what president you are!",
-                data-size="large", data-count="none",
-                data-hashtags="mysteryquiz",
-                target="_blank")
-            <i class="fa fa-twitter"></i> Tweet this
-
-        .col-md-2.text-center
-          h2
           - var twurl = "https://twitter.com/intent/tweet?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(twtext) + "&hashtags=mysteryquiz"
           
           a(class="btn btn-block btn-social btn-sm btn-twitter", 
               href!=twurl)
             <i class="fa fa-twitter"></i> Tweet this
-
-          //a(href="https://twitter.com/share", class="twitter-share-button", data-text="Smell the glove...", data-size="large", target="_blank") Tweet this
-          // <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
 
         .col-md-2.text-center
           h2
