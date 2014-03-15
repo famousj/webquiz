@@ -19,7 +19,7 @@
 	width: 400px;
 }
 
-.quiz-intro h3, p {
+.quiz-description {
  	background: rgb(255, 255, 255); 
  	background: rgba(255, 255, 255, .5); 
 	display: block;
