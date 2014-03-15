@@ -24,6 +24,14 @@ exports.results = {
         fbdescription:  "Take this quiz and find out president you are!",
         twtext: "I took the President quiz and got William Henry Harrison.  The heck?!",
     },
+    "txt":
+    {
+        title:  "You got \"Send Her a Text Message\"",
+		topic:  "How should you break up with your girlfriend?",
+        fbtitle:    "I got \"Send Her a Text Message\"!",
+        fbdescription:  "Take this quiz and find out you should break up with your girlfriend!",
+        twtext: "I took the \"How to break up with your girlfriend\" quiz and I got \"Send Her a Text\"!",
+    },
 };
 
 
