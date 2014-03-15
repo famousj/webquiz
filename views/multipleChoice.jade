@@ -3,29 +3,22 @@ extends layout
 block content
 
   .jumbotron
-    .quiz-container
-      .container
-        .row
+    .quiz-container.container
+      .row
+        .col-md-12
+          h3(class="text-center")= question
+      each answer, index in answers
+        .row.quiz-question
           .col-md-12
-            h3(class="text-center")= question
-        each answer, index in answers
-          .row
-            .col-md-12
-              .radio
-                label
-                  if (index == 0) 
-                    input(type="radio", name="answerRadios", id="radios"+index value="option"+index, checked )
-                  else
-                    input(type="radio", name="answerRadios", id="radios"+index value="option"+index)
+            .radio
+              label
+                if (index == 0) 
+                  input(type="radio", name="answerRadios", id="radios"+index value="option"+index, checked )
+                else
+                  input(type="radio", name="answerRadios", id="radios"+index value="option"+index)
 
-                   a(href=nextpage)
-                     p(class="text-left")= answer
+                a(href=nextpage)
+                  p(class="text-left")= answer
           
-        a(href=nextpage, class="btn btn-lg btn-primary") Next Question!
+      a(href=nextpage, class="btn btn-lg btn-primary") Next Question!
 
-        <div class="radio">
- 
-  // Bootstrap core JavaScript
-  // Placed at the end of the document so the pages load faster 
-  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
-  script(src="js/bootstrap.min.js")
