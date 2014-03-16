@@ -37,7 +37,7 @@ exports.results = {
         title:  "You got nunchucks!",
 		topic:  "What Ninja Weapon Are You?",
         fbtitle:    "I got nunchucks!",
-        fbdescription:  "Take this quiz and find out kind of ninja weapon you are!",
+        fbdescription:  "Take this quiz and find out what kind of ninja weapon you are!",
         twtext: "I took the \"What Ninja Weapon Are You?\" quiz and got Nunchucks.  Aw, yeah!",
     },
     "rerun":
@@ -63,6 +63,14 @@ exports.results = {
         fbtitle:    "It was the oysters!",
         fbdescription:  "Take this quiz and find out what gave you food poisoning!",
         twtext: "I took the Mystery Quiz and found out that the oysters gave me food poisoning!",
+    },
+   "barbaro":
+    {
+        title:  "You got Barbaro!",
+		topic:  "What Famous Racehorse Are You?",
+        fbtitle:    "I got Barbaro!",
+        fbdescription:  "Take this quiz and find out what famous racehorse you are!",
+        twtext: "I took the Famous Racehorse quiz and got Barbaro.  Tragic!",
     },
 
 };
