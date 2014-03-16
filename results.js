@@ -32,6 +32,14 @@ exports.results = {
         fbdescription:  "Take this quiz and find out you should break up with your girlfriend!",
         twtext: "I took the \"How to break up with your girlfriend\" quiz and I got \"Send Her a Text\"!",
     },
+    "nunchucks":
+    {
+        title:  "You got nunchucks!",
+		topic:  "What Ninja Weapon Are You?",
+        fbtitle:    "I got nunchucks!",
+        fbdescription:  "Take this quiz and find out kind of ninja weapon you are!",
+        twtext: "I took the \"What Ninja Weapon Are You?\" quiz and got Nunchucks.  Aw, yeah!",
+    },
 };
 
 
