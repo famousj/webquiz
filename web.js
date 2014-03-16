@@ -13,8 +13,9 @@ app.configure('development', function(){
   app.locals.pretty = true;
 });
 
-var do404 = function(res) {
-	res.send(404, '<h2>404!</h2>Well, this is awkward...');
+var do404 = function(req, res) {
+    res.status(404);
+	res.render('404.jade', { url:req.url });
 }
 
 app.set('views', path.join(__dirname, 'views'));
@@ -52,7 +53,7 @@ app.get(/^\/q(\d+).html$/, function(req, res) {
 		res.render('pictures.jade', question);
 	}
 	else { 
-		do404(res);
+		do404(req, res);
 	}
 
 });
@@ -91,7 +92,7 @@ app.get("/results.html", function(req, res) {
 });
 
 app.use(function(req, res, next){
-    do404(res);
+    do404(req, res);
 });
 
 

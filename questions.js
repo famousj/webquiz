@@ -6,7 +6,7 @@ exports.pictureQuestions = [
 			{ title: "Houndstooth",	img: "imgs/houndstooth.jpg" },
 			{ title: "Polka Dot",	img: "imgs/polka.jpg" },
 			{ title: "Paisley", 	img: "imgs/paisley.jpg" },
-			{ title: "Some Kind of Fractal",	img: "imgs/fractal.jpg" },
+			{ title: "Something Weird and Psychedelic",	img: "imgs/fractal.jpg" },
 			{ title: "Solid", 		img: "imgs/black.jpg" },
 		],
 	},
