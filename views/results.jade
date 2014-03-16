@@ -37,13 +37,14 @@ block content
         .col-md-12.text-center
           img(src=img)
       .row
-        .col-md-3.text-center
-        .col-md-2.text-center
+        .col-md-4
+        .col-md-2
           h2
           a(class="btn btn-block btn-social btn-sm btn-facebook", href=fburl, target="_blank").
-            <i class="fa fa-facebook"></i> Share on Facebook
+            <i class="fa fa-facebook"></i>
+            Share on Facebook
 
-        .col-md-2.text-center
+        .col-md-2
           h2
           - var twurl = "https://twitter.com/intent/tweet?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(twtext) + "&hashtags=mysteryquiz"
           
@@ -51,10 +52,6 @@ block content
               href!=twurl)
             <i class="fa fa-twitter"></i> Tweet this
 
-        .col-md-2.text-center
-          h2
-          a(class="btn btn-block btn-social btn-sm btn-facebook", href=fburl).
-            <i class="fa fa-facebook"></i> Post to Urbit
       .row
         .col-md-12.text-center
           h2
