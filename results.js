@@ -51,10 +51,18 @@ exports.results = {
     "malm":
     {
         title:  "You got MALM 6-drawer dresser, white",
-		topic:  "What Piece of IKEA furniture are you?",
+		topic:  "What Piece of IKEA Furniture Are You?",
         fbtitle:    "I got MALM 6-drawer dresser, white!",
         fbdescription:  "Take this quiz and find out what sort of IKEA furniture you are!",
         twtext: "I took the IKEA furniture quiz and I got the MALM 6-drawer dresser, white!",
+    },
+    "oysters":
+    {
+        title:  "It was the oysters!",
+		topic:  "What Gave Me Food Poisoning?",
+        fbtitle:    "It was the oysters!",
+        fbdescription:  "Take this quiz and find out what gave you food poisoning!",
+        twtext: "I took the Mystery Quiz and found out that the oysters gave me food poisoning!",
     },
 
 };
