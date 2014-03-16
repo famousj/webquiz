@@ -48,6 +48,14 @@ exports.results = {
         fbdescription:  "Take this quiz and find out what 70's sitcom character you are!",
         twtext: "I took the 70's sitcom character quiz and I got Rerun from \"What's Happening!!\"",
     },
+    "malm":
+    {
+        title:  "You got MALM 6-drawer dresser, white",
+		topic:  "What Piece of IKEA furniture are you?",
+        fbtitle:    "I got MALM 6-drawer dresser, white!",
+        fbdescription:  "Take this quiz and find out what sort of IKEA furniture you are!",
+        twtext: "I took the IKEA furniture quiz and I got the MALM 6-drawer dresser, white!",
+    },
 
 };
 
