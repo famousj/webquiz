@@ -43,8 +43,17 @@ block content
       p.
         <b> A </b> Guilty as charged.  But hey, it's my FAQ.  I'll put what I
         want in it.
+      p.
+        <b> Q </b> So since we established that this whole thing is fake, what
+        are all the possible "results"?
+      p.
+        <b> A </b>: Here they are:
+
+      ul
+
+        - for (var result in results) {
+          - var item = "<a href=" + result + ".html target=_blank> " + results[result].topic + "</a>"
+          li!= item
+        - }
   
       a(href="index.html", class="btn btn-lg btn-primary") Back to the quiz
-
-
-  

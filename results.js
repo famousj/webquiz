@@ -2,7 +2,7 @@ exports.results = {
     "27_yankees":
 	{
         title:  "You got the '27 Yankees!",
-		topic:  "What historic sports team are you?",
+        topic:  "What Historic Sports Team Are You?",
         fbtitle:        "I got the '27 Yankees!",
         fbdescription:  "Take this quiz and find out what historic sports team you are!",
         twtext: "I took the Sports Team quiz and got the '27 Yankees.  Awesome!",
@@ -11,7 +11,7 @@ exports.results = {
     "husker_du":
     {
         title:  "You got Hüsker Dü!",
-		topic:  "What 80's Alt Rock Band Should You Listen to?",
+        topic:  "What 80's Alt Rock Band Should You Listen to?",
         fbtitle: "I should listen to Hüsker Dü",
         fbdescription:  "Take this quiz and find out what 80's Alt Rock band you should listen to!",
         twtext: "I took the 80's Alt Rock quiz and got Hüsker Dü.  Rawk!",
@@ -27,7 +27,7 @@ exports.results = {
     "txt":
     {
         title:  "You got \"Send Her a Text Message\"",
-		topic:  "How should you break up with your girlfriend?",
+		topic:  "How Should You Break Up with Your Girlfriend?",
         fbtitle:    "I got \"Send Her a Text Message\"!",
         fbdescription:  "Take this quiz and find out how you should break up with your girlfriend!",
         twtext: "I took the \"How to break up with your girlfriend\" quiz and I got \"Send Her a Text\"!",
@@ -43,7 +43,7 @@ exports.results = {
     "rerun":
     {
         title:  "You got Rerun from \"What's Happening!!\"",
-		topic:  "What 70's sitcom character are you?",
+		topic:  "What 70's Sitcom Character Are You?",
         fbtitle:    "I got Rerun from \"What's Happening!!\"",
         fbdescription:  "Take this quiz and find out what 70's sitcom character you are!",
         twtext: "I took the 70's sitcom character quiz and I got Rerun from \"What's Happening!!\"",
@@ -75,7 +75,7 @@ exports.results = {
    "wrath":
     {
         title:  "You got Wrath!",
-		topic:  "What of the Seven Deadly Sins Are You?",
+		topic:  "Which of the Seven Deadly Sins Are You?",
         fbtitle:    "I got Wrath!",
         fbdescription:  "Take this quiz and find out which of the Seven Deadly Sins you are!",
         twtext: "I took the Seven Deadly Sins quiz and got Wrath.  You got a problem with that?!",

@@ -25,7 +25,7 @@ app.get('/(index.html)?', function(req, res) {
 });
 
 app.get('/about.html', function(req, res) {
-    res.render('about.jade', {title: "About"});
+    res.render('about.jade', {title: "About", results: results.results});
 });
 
 app.get(/^\/q(\d+).html$/, function(req, res) {
