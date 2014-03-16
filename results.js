@@ -72,7 +72,14 @@ exports.results = {
         fbdescription:  "Take this quiz and find out what famous racehorse you are!",
         twtext: "I took the Famous Racehorse quiz and got Barbaro.  Tragic!",
     },
-
+   "wrath":
+    {
+        title:  "You got Wrath!",
+		topic:  "What of the Seven Deadly Sins Are You?",
+        fbtitle:    "I got Wrath!",
+        fbdescription:  "Take this quiz and find out which of the Seven Deadly Sins you are!",
+        twtext: "I took the Seven Deadly Sins quiz and got Wrath.  You got a problem with that?!",
+    },
 };
 
 
