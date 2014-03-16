@@ -29,10 +29,10 @@ exports.results = {
         title:  "You got \"Send Her a Text Message\"",
 		topic:  "How should you break up with your girlfriend?",
         fbtitle:    "I got \"Send Her a Text Message\"!",
-        fbdescription:  "Take this quiz and find out you should break up with your girlfriend!",
+        fbdescription:  "Take this quiz and find out how you should break up with your girlfriend!",
         twtext: "I took the \"How to break up with your girlfriend\" quiz and I got \"Send Her a Text\"!",
     },
-    "nunchucks":
+   "nunchucks":
     {
         title:  "You got nunchucks!",
 		topic:  "What Ninja Weapon Are You?",
@@ -40,6 +40,15 @@ exports.results = {
         fbdescription:  "Take this quiz and find out kind of ninja weapon you are!",
         twtext: "I took the \"What Ninja Weapon Are You?\" quiz and got Nunchucks.  Aw, yeah!",
     },
+    "rerun":
+    {
+        title:  "You got Rerun from \"What's Happening!!\"",
+		topic:  "What 70's sitcom character are you?",
+        fbtitle:    "I got Rerun from \"What's Happening!!\"",
+        fbdescription:  "Take this quiz and find out what 70's sitcom character you are!",
+        twtext: "I took the 70's sitcom character quiz and I got Rerun from \"What's Happening!!\"",
+    },
+
 };
 
 
