@@ -49,14 +49,27 @@ app.get(/^\/q(\d+).html$/, function(req, res) {
 	}
 	else if (qnum == questions.mcStart + questions.mc.length) {
 		var question = questions.pictureQuestions[1];
-		question.nextpage = "results.html";
+		question.nextpage = nextpage;
 		res.render('pictures.jade', question);
 	}
+    else if (qnum == questions.mcStart + questions.mc.length + 1) {
+        var question = {
+            "title": "True or False",
+            "questions": questions.trueFalse,
+            "nextpage": "results.html",
+        };
+        
+        res.render('trueFalse.jade', question);
+    }
 	else { 
 		do404(req, res);
 	}
-
 });
+
+app.get("/tf.html", function(req, res) {
+
+    });
+
 
 for (var result in results.results) {
     var url = "/" + result + ".html";

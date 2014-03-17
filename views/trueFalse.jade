@@ -1,0 +1,27 @@
+extends layout
+
+block content
+
+  .jumbotron
+    .quiz-container.container
+      .row
+        .col-md-12
+          h3(class="text-left") True or False?
+      each question, index in questions
+        .row.quiz-question
+          .col-md-12
+            p(class="text-left")= question
+        .row.quiz-question
+          .col-md-4
+            label(class="radio-inline")
+              input(type="radio", name="tf"+index, id="true"+index, value="true"+index)
+              | True
+            label(class="radio-inline")
+              input(type="radio", name="tf"+index, id="false"+index, value="false"+index)
+              | False
+        .row.quiz-question
+          .col-md-12
+            p
+
+      a(href=nextpage, class="btn btn-lg btn-primary") Next!
+

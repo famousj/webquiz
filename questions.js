@@ -67,3 +67,13 @@ exports.mc = [
 	},
 ];
 
+exports.trueFalse = [
+    "I like the taste of tea.",
+    "My palms are somewhat sweatier than most people's.",
+    "I find clowns sexy.",
+    "Some weather we're having!",
+    "My dad can beat up your dad.",
+    "I get nervous when spiders are crawling on my face.",
+    "What are your left hand?"
+];
+
