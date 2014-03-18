@@ -74,6 +74,6 @@ exports.trueFalse = [
     "Some weather we're having!",
     "My dad can beat up your dad.",
     "I get nervous when spiders are crawling on my face.",
-    "I don't trust people who are left-handed?"
+    "I don't trust people who are left-handed."
 ];
 
