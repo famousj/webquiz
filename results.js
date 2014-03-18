@@ -59,7 +59,7 @@ exports.results = {
     "oysters":
     {
         title:  "It was the oysters!",
-		topic:  "What Gave Me Food Poisoning?",
+		topic:  "What Gave You Food Poisoning?",
         fbtitle:    "It was the oysters!",
         fbdescription:  "Take this quiz and find out what gave you food poisoning!",
         twtext: "I took the Mystery Quiz and found out that the oysters gave me food poisoning!",
