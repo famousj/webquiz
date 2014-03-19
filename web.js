@@ -22,7 +22,14 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/(index.html)?', function(req, res) {
-	res.render('index.jade', {title: "The Mystery Web Quiz"});
+    var pageinfo = {
+        "title": "The Mystery Web Quiz",
+        "url": "http://" + req.headers.host + req.path,
+        "description": "Take this quiz.  When we're done, we'll let you know what quiz you were taking and also what your results are.",
+        "bgimg": "imgs/sew-crates.jpg",
+    };
+ 
+	res.render('index.jade', pageinfo);
 });
 
 app.get('/about.html', function(req, res) {
