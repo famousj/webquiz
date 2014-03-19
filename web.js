@@ -22,11 +22,16 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/(index.html)?', function(req, res) {
+    var hosturl = "http://" + req.headers.host;
+    var bgimg = "imgs/sew-crates.jpg";
+
     var pageinfo = {
         "title": "The Mystery Web Quiz",
-        "url": "http://" + req.headers.host + req.path,
+        "url":  hosturl + req.path,
+        "bgimg": bgimg,
+
         "description": "Take this quiz.  When we're done, we'll let you know what quiz you were taking and also what your results are.",
-        "bgimg": "imgs/sew-crates.jpg",
+        "fbimg": hosturl + "/" + bgimg,
     };
  
 	res.render('index.jade', pageinfo);
